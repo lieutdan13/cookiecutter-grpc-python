@@ -1,0 +1,7 @@
+{
+    "full_name": "John Doe",
+    "project_name": "gRPC Python",
+    "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
+    "app_name": "{{ cookiecutter.project_name|lower|replace(' ', '_') }}",
+    "project_short_description": "A gRPC service powered by Python."
+}
