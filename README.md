@@ -5,16 +5,16 @@ Powered by [Cookiecutter](https://github.com/audreyr/cookiecutter), Cookiecutter
 ## Features
 
 - [x] Makefile
-- [ ] Dockerfile
+- [x] Dockerfile
 - [ ] docker base image choice
 - [ ] Docker version choice
 - [ ] Docker-compose
-- [ ] .gitignore
+- [x] .gitignore
 - [ ] README.md
-- [ ] Starter proto file
+- [x] Starter proto file
 - [ ] Python client
 - [ ] Healthcheck
-- [ ] System check
+- [x] System check
 - [ ] cookiecutter-options.yml
 - [ ] tests for cookiecutter
 - [ ] tests for gRPC service
@@ -44,18 +44,9 @@ Warning: After this point, change all default options to your own information.
 Answer the prompts with your own desired options.
 
 ```console
-app_name [example]:
-project_short_description [example description]:
-Select docker_build_image_version:
-1 - 1.11
-2 - 1.10.3
-3 - 1.9.7
-Choose from 1, 2, 3 [1]:
-use_docker [y]:
-Select use_ci:
-1 - travis
-2 - circle
-3 - none
-Choose from 1, 2, 3 [1]:
-
+full_name [John Doe]: 
+project_name [gRPC Python]: 
+project_slug [grpc-python]: 
+app_name [grpc_python]: 
+project_short_description [A gRPC service powered by Python.]:
 ```

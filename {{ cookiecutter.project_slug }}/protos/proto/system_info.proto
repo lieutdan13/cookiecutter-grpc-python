@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+service SystemInfo {
+  rpc SystemInfo(SystemInfoRequest) returns (SystemInfoResponse) {}
+}
+
+message SystemInfoRequest {
+  ClientInfo client_info = 1;
+}
+
+message SystemInfoResponse {
+  ClientInfo client_info = 1;
+  ServerInfo server_info = 2;
+}
+
+message ClientInfo {
+  HostInfo host_info = 1;
+}
+
+message ServerInfo {
+  HostInfo host_info = 1;
+}
+
+message HostInfo {
+  string hostname = 1;
+  string ip_addr = 2;
+  int32 port = 3;
+  int32 timestamp = 4;
+}
