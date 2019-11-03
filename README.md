@@ -5,21 +5,27 @@ Powered by [Cookiecutter](https://github.com/audreyr/cookiecutter), Cookiecutter
 ## Features
 
 - [x] Makefile
-- [x] Dockerfile
-- [ ] docker base image choice
 - [ ] Docker version choice
 - [ ] Docker-compose
 - [x] .gitignore
-- [ ] README.md
-- [ ] Python client
-- [ ] Healthcheck
-- [x] System Info
+- [x] README.md
 - [x] cookiecutter-options.yml
 - [ ] tests for cookiecutter
-- [ ] tests for gRPC service
-- [ ] server keepalive
-- [ ] channel ready (reconnects if connection dropped)
-- [ ] channel keepalive
+- [ ] Python client
+  - [ ] base client
+  - [ ] client keepalive
+  - [ ] channel ready (reconnects if connection dropped)
+  - [ ] client tests
+- [ ] Server
+  - [ ] Healthcheck
+  - [x] System Info
+  - [ ] tests for gRPC service
+  - [x] server keepalive
+  - [x] Dockerfile
+  - [ ] docker base image choice
+  - [ ] endpoint decorator
+  - [ ] log server start
+  - [ ] log endpoint call
 
 ## Usage
 
