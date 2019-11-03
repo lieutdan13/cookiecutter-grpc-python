@@ -11,13 +11,15 @@ Powered by [Cookiecutter](https://github.com/audreyr/cookiecutter), Cookiecutter
 - [ ] Docker-compose
 - [x] .gitignore
 - [ ] README.md
-- [x] Starter proto file
 - [ ] Python client
 - [ ] Healthcheck
-- [x] System check
-- [ ] cookiecutter-options.yml
+- [x] System Info
+- [x] cookiecutter-options.yml
 - [ ] tests for cookiecutter
 - [ ] tests for gRPC service
+- [ ] server keepalive
+- [ ] channel ready (reconnects if connection dropped)
+- [ ] channel keepalive
 
 ## Usage
 
@@ -34,6 +36,11 @@ $ brew install cookiecutter
 Finally, to run it based on this template, type:
 ```console
 $ cookiecutter https://github.com/lieutdan13/cookiecutter-grpc-python
+```
+
+If you want to re-apply the changes to this cookiecutter, run:
+```console
+$ cookiecutter https://github.com/lieutdan13/cookiecutter-grpc-python --config-file [location_of_your_project]/cookiecutter-options.yml -f [parent_directory_of_your_project]
 ```
 
 ## options

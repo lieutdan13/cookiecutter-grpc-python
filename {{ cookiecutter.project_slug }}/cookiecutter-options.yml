@@ -1,0 +1,6 @@
+default_context:
+  full_name: "{{ cookiecutter.full_name }}"
+  project_name: "{{ cookiecutter.project_name }}"
+  project_slug: "{{ cookiecutter.project_slug }}"
+  app_name: "{{ cookiecutter.app_name }}"
+  project_short_description: "{{ cookiecutter.project_short_description }}"

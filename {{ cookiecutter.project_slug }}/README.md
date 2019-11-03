@@ -3,15 +3,17 @@ author: {{cookiecutter.full_name}}
 
 {{cookiecutter.project_short_description}}
 
-## Getting started
+## Getting Started
 
 This project requires Docker to be installed.
+
+### Quickstart
 
 Running it then should be as simple as:
 
 ```console
-$ make
-$ docker-compose up
+$ make build
+$ make run
 ```
 
 ### Testing
