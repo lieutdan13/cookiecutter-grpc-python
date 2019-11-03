@@ -1,10 +1,10 @@
 SHELL := bash
 
-.PHONY: build help generate-proto
+.PHONY: build help generate-proto build-server
 
 PROTO_DIR = ./protos/generated
 
-build: build-server
+build: generate-proto build-server
 
 build-server:
 	cd server; \
