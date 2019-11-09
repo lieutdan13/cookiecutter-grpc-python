@@ -23,7 +23,8 @@ Powered by [Cookiecutter](https://github.com/audreyr/cookiecutter), Cookiecutter
   - [x] server keepalive
   - [x] Dockerfile
   - [ ] docker base image choice
-  - [ ] endpoint decorator
+  - [x] endpoint decorator
+  - [ ] logging framework
   - [ ] log server start
   - [ ] log endpoint call
 
