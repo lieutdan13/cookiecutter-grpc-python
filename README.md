@@ -17,7 +17,7 @@ Powered by [Cookiecutter](https://github.com/audreyr/cookiecutter), Cookiecutter
   - [ ] channel ready (reconnects if connection dropped)
   - [ ] client tests
 - [ ] Server
-  - [ ] Healthcheck
+  - [x] Healthcheck
   - [x] System Info
   - [ ] tests for gRPC service
   - [x] server keepalive
