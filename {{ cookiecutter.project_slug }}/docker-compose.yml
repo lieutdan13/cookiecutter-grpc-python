@@ -1,0 +1,11 @@
+version: '3'
+services:
+  {{ cookiecutter.app_name }}:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    image: {{ cookiecutter.app_name }}
+    container_name: {{ cookiecutter.app_name }}
+    ports:
+      - 50050:50050
+      - 50051:50051
