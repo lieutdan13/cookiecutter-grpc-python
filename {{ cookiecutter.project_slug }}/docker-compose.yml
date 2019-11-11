@@ -6,6 +6,8 @@ services:
       dockerfile: Dockerfile
     image: {{ cookiecutter.app_name }}
     container_name: {{ cookiecutter.app_name }}
+    environment:
+      - LOGLEVEL=DEBUG
     ports:
       - 50050:50050
       - 50051:50051

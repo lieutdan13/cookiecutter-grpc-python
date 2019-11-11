@@ -26,7 +26,7 @@ Powered by [Cookiecutter](https://github.com/audreyr/cookiecutter), Cookiecutter
   - [x] logging framework
   - [x] log server start
   - [x] log endpoint call
-  - [ ] log level from env var
+  - [x] log level from env var
   - [ ] certificates for local development
 
 ## Usage
