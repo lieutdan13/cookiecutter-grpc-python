@@ -5,7 +5,6 @@ Powered by [Cookiecutter](https://github.com/audreyr/cookiecutter), Cookiecutter
 ## Features
 
 - [x] Makefile
-- [ ] Docker version choice
 - [x] Docker-compose
 - [x] .gitignore
 - [x] README.md
@@ -24,9 +23,10 @@ Powered by [Cookiecutter](https://github.com/audreyr/cookiecutter), Cookiecutter
   - [x] Dockerfile
   - [ ] docker base image choice
   - [x] endpoint decorator
-  - [ ] logging framework
-  - [ ] log server start
-  - [ ] log endpoint call
+  - [x] logging framework
+  - [x] log server start
+  - [x] log endpoint call
+  - [ ] log level from env var
   - [ ] certificates for local development
 
 ## Usage
