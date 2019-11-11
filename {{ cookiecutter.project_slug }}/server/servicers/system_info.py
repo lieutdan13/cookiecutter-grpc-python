@@ -9,7 +9,6 @@ from proto.system_info_pb2 import SystemInfoResponse, ServerInfo, HostInfo
 
 
 class SystemInfoServicer(grpc_SystemInfoServicer):
-
     def __init__(self):
         self.logger = module_logger(__name__)
 
@@ -25,7 +24,7 @@ class SystemInfoServicer(grpc_SystemInfoServicer):
                     hostname=hostname,
                     ip_addr=ip_addr,
                     port=50051,
-                    timestamp=int(time.time())
+                    timestamp=int(time.time()),
                 )
-            )
+            ),
         )
