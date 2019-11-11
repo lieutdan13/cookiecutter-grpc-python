@@ -7,6 +7,14 @@ service Health {
 message HealthCheckRequest {
 }
 
+/* A response to the HealthCheckRequest. Contains both a status code
+ * and a status message */
+
 message HealthCheckResponse {
-  string status = 1;
+  enum HealthStatus {
+    OK = 0;
+    UNKNOWN_HEALTH_STATUS = 1;
+  }
+  HealthStatus status_code = 1;
+  string status = 2;
 }

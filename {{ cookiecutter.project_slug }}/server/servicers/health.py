@@ -5,7 +5,6 @@ from proto.health_pb2 import HealthCheckResponse
 
 
 class HealthServicer(grpc_HealthServicer):
-
     def __init__(self):
         self.logger = module_logger(__name__)
 
@@ -20,4 +19,4 @@ class HealthServicer(grpc_HealthServicer):
             - external logger
             - etc.
         """
-        return HealthCheckResponse(status="OK")
+        return HealthCheckResponse(status_code=HealthCheckResponse.OK, status="OK")

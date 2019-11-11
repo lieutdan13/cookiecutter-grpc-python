@@ -2,7 +2,7 @@ import grpc
 import sys
 
 from proto import health_pb2_grpc
-from proto.health_pb2 import HealthCheckRequest
+from proto.health_pb2 import HealthCheckRequest, HealthCheckResponse
 
 
 class HealthCheck(object):
@@ -21,9 +21,9 @@ class HealthCheck(object):
 
     def check_health(self):
         response = self.health_check_stub.HealthCheck(HealthCheckRequest())
-        if response.status.lower() == "ok":
+        if response.status == HealthCheckResponse.OK:
             sys.exit(0)
-        sys.exit(1)
+        sys.exit(response.status_code)
 
 
 if __name__ == "__main__":
